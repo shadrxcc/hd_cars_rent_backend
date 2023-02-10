@@ -11,7 +11,11 @@ class TokensController < ApplicationController
     end
   end
 
-  
+  def destroy
+    user = User.find_by(username: params[:username])
+    user.find(params[:id]).destroy!
+    render json: { message: 'You have logged out succesfully' }
+  end
 
   private
   def encode_token(payload={})
