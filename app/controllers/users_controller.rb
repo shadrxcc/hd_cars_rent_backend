@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-    def create
-    input = User.new(params.permit(:username))
+   def create
+   input = User.new(params.permit(:username))
     if(input.save)
       :ok
     else
