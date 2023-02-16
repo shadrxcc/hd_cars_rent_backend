@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_09_234240) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_16_064607) do
   create_table "bookings", force: :cascade do |t|
     t.string "user"
     t.string "car"
     t.date "start_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "location"
   end
 
   create_table "car_menu_items", force: :cascade do |t|

@@ -4,7 +4,8 @@ class CreateBookings < ActiveRecord::Migration[7.0]
       t.string :user
       t.string :car
       t.date :start_date
-      
+      t.string :location
+
       t.timestamps
     end
   end
