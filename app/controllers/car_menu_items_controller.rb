@@ -23,7 +23,7 @@ class CarMenuItemsController < ApplicationController
     @carMenuItems = CarMenuItem.find(params[:id])
     @carMenuItems.update(
       car_name: params[:car_name],
-      image_url: params[:image_url],
+      image_url: Cloudinary::Uploader.upload(params[:image_url]),
       price: params[:price],
       car_description: params[:car_description]
     )
