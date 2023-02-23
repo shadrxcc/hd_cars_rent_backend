@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_21_033637) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_23_041746) do
   create_table "bookings", force: :cascade do |t|
     t.string "user"
     t.string "car"
@@ -31,6 +31,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_21_033637) do
     t.datetime "updated_at", null: false
     t.string "speed"
     t.string "consumption"
+    t.string "user"
   end
 
   create_table "users", force: :cascade do |t|

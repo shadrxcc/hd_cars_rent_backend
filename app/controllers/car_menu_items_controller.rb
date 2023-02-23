@@ -32,6 +32,6 @@ class CarMenuItemsController < ApplicationController
   
   def car_params
     image = Cloudinary::Uploader.upload(params[:image_url])
-    params.permit(:car_name, :car_description, :price, :speed, :consumption).merge(image_url: image['url'])
+    params.permit(:car_name, :car_description, :price, :speed, :user, :consumption).merge(image_url: image['url'])
   end
 end

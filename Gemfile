@@ -33,7 +33,7 @@ gem 'rack-cors'
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
- gem 'tzinfo-data'
+gem 'tzinfo-data'
 
 gem 'cloudinary', '~> 1.25'
 gem 'image_processing', '~> 1.12', '>= 1.12.2'
