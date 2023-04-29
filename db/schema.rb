@@ -15,9 +15,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_23_041746) do
     t.string "user"
     t.string "car"
     t.date "start_date"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "location"
     t.string "price"
     t.string "image"
   end
