@@ -79,8 +79,6 @@ GEM
     debug (1.7.1)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
-    dockerfile-rails (1.1.2)
-      rails
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.12.0)
@@ -196,7 +194,6 @@ DEPENDENCIES
   bootsnap
   cloudinary (~> 1.25)
   debug
-  dockerfile-rails (>= 1.1)
   image_processing (~> 1.12, >= 1.12.2)
   jwt
   pg (~> 1.4, >= 1.4.5)
